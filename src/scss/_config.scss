@@ -1,0 +1,35 @@
+
+// color:
+$add-todo-btn-bg: #fff;
+$add-todo-btn-color: rgb(80, 161, 80);
+$add-todo-btn-border: $add-todo-btn-color;
+
+
+$list-bg: #8996ac; // haven't used this now, just white bg
+
+$active-item-bg: #385723;
+$active-status-bg: #70ad47;
+
+$active-on-view-input: $active-item-bg;
+$active-on-view-input-color: #fff;
+$edit-btn-color: #000;
+$del-btn-color: #c00;
+
+$active-on-edit-input: #548235;
+$save-btn-color: #5b9bd5;
+$undo-btn-color: #767171;
+
+$finished-item-bg: #767171;
+$finished-status-bg: #bfbfbf;
+$finished-input-bg: $finished-item-bg;
+
+
+// font
+// title font
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+// tasks font
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+$title-font: 'RocknRoll One', sans-serif;
+$task-font: 'Original Surfer', cursive;
+

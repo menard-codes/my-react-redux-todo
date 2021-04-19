@@ -1,0 +1,28 @@
+@import '../../../scss/config';
+
+@mixin list-item {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#list {
+    list-style: none;
+    width: 90%;
+    display: grid;
+    
+    #list-item {
+        padding: 30px;
+        margin: 10px;
+    }
+
+    .active-item {
+        @include list-item;
+        background-color: $active-item-bg;
+    }
+
+    .finished-item {
+        @include list-item;
+        background-color: $finished-item-bg;
+    }
+}

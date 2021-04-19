@@ -1,0 +1,27 @@
+@import '../../../scss/config';
+
+@mixin task-input {
+    border: none;
+    padding: 5px;
+    font-family: $task-font;
+    font-size: 1.5rem;
+    width: 79%;
+}
+
+.active-task-onEdit-input {
+    @include task-input;
+    background-color: $active-on-edit-input;
+    border-radius: 10px;
+}
+
+.active-task-onView-input {
+    @include task-input;
+    background-color: $active-on-view-input;
+    color: $active-on-view-input-color;
+}
+
+.finished-task {
+    @include task-input;
+    background-color: $finished-item-bg;
+    text-decoration: line-through;
+}

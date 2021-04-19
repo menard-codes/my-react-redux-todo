@@ -1,0 +1,28 @@
+@import '../../scss/config';
+
+#todo-edit {
+    margin-top: 10px;
+    width: 30vw;
+    padding: 15px 5px;
+    font-family: $task-font;
+    font-size: 1.5rem;
+}
+
+#add-todo {
+    position: relative;
+    bottom: 3px;
+    padding: 17px 15px;
+    margin-left: 8px;
+    font-size: 1rem;
+    background-color: $add-todo-btn-bg;
+    color: $add-todo-btn-color;
+    border: 2px solid $add-todo-btn-border;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+    &:hover {
+        background-color: $add-todo-btn-color;
+        color: $add-todo-btn-bg;
+    }
+}

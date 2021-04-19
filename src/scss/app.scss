@@ -1,0 +1,21 @@
+@import './config';
+
+
+#main-app {
+    width: clamp(400px, 80vw, 720px);
+
+    #head {
+        padding: 50px;
+
+        #app-title {
+            font-family: $title-font;
+            font-size: 3rem;
+        }
+    }
+
+    #todo-list {
+        border-radius: 10px;
+        display: grid;
+        justify-items: center;
+    }
+}

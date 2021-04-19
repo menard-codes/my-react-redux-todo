@@ -1,0 +1,72 @@
+@import '../../../scss/config';
+
+@mixin status-btn($color) {
+    background-color: $color;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    bottom: 0.5vh;
+}
+
+.active-status-btn {
+    @include status-btn($active-status-bg)
+}
+
+.finished-status-btn {
+    @include status-btn(($finished-status-bg))
+}
+
+@mixin task-btn($color, $amount) {
+    background-color: lighten($color, $amount);
+}
+
+@mixin task-item-btn {
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.edit-btn {
+    @include task-item-btn;
+    @include task-btn($edit-btn-color, 95);
+}
+
+.delete-btn {
+    @include task-item-btn;
+    @include task-btn($del-btn-color, 50);
+}
+
+.save-btn {
+    @include task-item-btn;
+    @include task-btn($save-btn-color, 30);
+}
+
+.undo-btn {
+    @include task-item-btn;
+    @include task-btn($undo-btn-color, 40);
+}
+
+// edit btn
+.edit-logo {
+    color: $edit-btn-color;
+}
+
+// delete btn
+.delete-logo {
+    color: $del-btn-color;
+}
+
+// save btn
+.save-logo {
+    color: $save-btn-color;
+}
+
+// undo btn
+.undo-logo {
+    color: $undo-btn-color;
+}
